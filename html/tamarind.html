@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/black.css">
+    <title>Tamarind Tofu with Vegetables and Soba</title>
+</head>
+<body>
+    <div class="img_con" onclick="redirectToPage('../Images/4406235-ab19fceb444746dda86e82a574c43c44.webp')">
+        <img src="../Images/4406235-ab19fceb444746dda86e82a574c43c44.webp" alt="asd">
+    </div>
+    <div class="container">
+        <div class="container2">
+            <div class="heading">
+                <h2 class="name">Japan: Tamarind Tofu with Vegetables and Soba</h2>
+                <p>
+                    Brightly colored vegetables with a tamarind, ginger, and garlic sauce are tossed with baked tofu triangles and served over bi-colored soba noodles with sesame and peanut crunch. Garnish as desired. Orange or pineapple slices are pretty on this dish.
+                </p>
+            </div>
+
+            <div class="main_info">
+                <div class="main_card_item">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>1 cup thinly sliced red bell pepper</li>
+                        <li>4 cloves crushed garlic</li>
+                        <li>1 orange, juiced</li>
+                        <li>2 tablespoons soy sauce</li>
+                        <li>2 tablespoons rice vinegar</li>
+                        <li>5 ounces light soba noodles</li>
+                        <li>1 tablespoon grated ginger</li>
+                        <li>5 ounces dark soba noodles</li>
+                        <li>1 tablespoon white sugar, or to taste</li>
+                        <li>1 pound tamarind pods</li>
+                        <li>1 teaspoon red pepper flakes, or to taste</li>
+                        <li>hot water to cover</li>
+                        <li>3 tablespoons peanut oil, divided</li>
+                        <li>¼ cup sesame seeds</li>
+                        <li>1 cup grated carrots</li>
+                        <li>1 (14 ounce) package firm tofu</li>
+                        <li>¼ cup dry-roasted peanuts</li>
+                        <li>1 cup thinly sliced cucumber</li>
+                        <li>1 cup diagonally sliced green onions</li>
+                    </ul>
+                </div>
+                <div class="direction">
+                    <h3>Step 1</h3>
+                    <p>
+                        Break open tamarind pods and scoop out flesh into a large bowl. Cover with hot water and let soften, about 1 hour. Push softened tamarind through a sieve with the back of a spoon to extract pulp, discarding seeds and tough fibers. Measure out a 1/2 cup of tamarind pulp; set aside.
+                    </p>
+                    <h3>Step 2</h3>
+                    <p>
+                        Slice tofu crosswise into 6 rectangles. Cut rectangles in half into 12 squares. Cut squares in half diagonally to make 24 triangles. Layer tofu on paper towels, pressing to extract excess liquid, about 30 minutes.
+                    </p>
+                    <p class="more_btn" onclick="open_more()">See All</p>
+
+                    <div class="more_">
+                        <span class="close_more" style="cursor: pointer;width: 40px;color: red;height: 40px;position: absolute; top: 0;right: 0;display: grid;place-items: center;font-size: 13pt;" onclick="close_more()">x</span>
+                        <h3>Step 3</h3>
+                        <p>
+                            Preheat oven to 375 degrees F (190 degrees C). Line a baking sheet with parchment paper.
+                        </p>
+                        <h3>Step 4</h3>
+                        <p>
+                            Toss tofu triangles with 2 tablespoons peanut oil; arrange on baking sheet.
+                        </p>
+                        <h3>Step 5</h3>
+                        <p>
+                            Bake in the preheated oven until golden brown, 45 to 60 minutes.
+                        </p>
+                        <h3>Step 6</h3>
+                        <p>
+                            Combine peanuts and sesame seeds in a large skillet or wok over medium heat; toast until fragrant, about 1 minute. Transfer to a bowl.
+                        </p>
+                        <h3>Step 7</h3>
+                        <p>
+                            Heat 1 1/2 teaspoon peanut oil in the same skillet over medium-high heat. Add cucumber, carrots, green onions, and red bell pepper; saute just until crisp-tender, about 2 minutes. Transfer to a bowl.
+                        </p>
+                        <h3>Step 8</h3>
+                        <p>
+                            Heat remaining 1 1/2 teaspoon peanut oil in the same skillet over medium heat. Add garlic; cook and stir until fragrant, about 30 seconds. Add tamarind pulp, orange juice, rice vinegar, soy sauce, ginger, sugar, and red pepper flakes; simmer until sauce is combined, about 3 minutes.
+                        </p>
+                        <h3>Step 9</h3>
+                        <p>
+                            Stir baked tofu triangles, peanuts, and sesame seeds into the sauce. Fold in cucumber mixture.
+                        </p>
+                        <h3>Step 10</h3>
+                        <p>
+                            Fill a large pot with water and bring to a boil. Add light and dark soba noodles; cook, stirring occasionally, under tender, about 3 minutes. Drain. Transfer to a large bowl. Top with tofu and cucumber mixture.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="nutrition">
+                    <h2>Nutrition Facts</h2>
+                    <table>
+                        <tr>
+                            <td>Calories</td>
+                            <td>836</td>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>24g</td>
+                        </tr>
+                        <tr>
+                            <td>Carbs</td>
+                            <td>144g</td>
+                        </tr>
+                        <tr>
+                            <td>Protien</td>
+                            <td>28g</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function redirectToPage(url) {
+          window.location.href = url;
+        }
+
+        var more_ = document.querySelector('.more_');
+        function open_more() {
+            more_.style.transform = 'translateY(0%)';
+            more_.style.opacity = '1';
+            more_.style.pointerEvents = 'all';
+        }
+        function close_more() {
+            more_.style.transform = 'translateY(10%)';
+            more_.style.opacity = '0';
+            more_.style.pointerEvents = 'none';
+        }
+      </script>
+</body>
+</html>

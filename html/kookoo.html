@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/black.css">
+    <title>Kookoo Sabzi (Fresh Herb Frittata)</title>
+</head>
+<body>
+    <div class="img_con" onclick="redirectToPage('../Images/image.webp')">
+        <img src="../Images/image.webp" alt="asd">
+    </div>
+    <div class="container">
+        <div class="container2">
+            <div class="heading">
+                <h2 class="name">Iran: Kookoo Sabzi (Fresh Herb Frittata)</h2>
+                <p>
+                    The bunches upon bunches of green herbs that take over our kitchen table on a regular basis are mixed here with a few eggs and spices for a fragrant, fresh, and vibrant kookoo sabzi. Use this recipe as a guide for all the greens and spices that can be thrown in.
+                </p>
+            </div>
+
+            <div class="main_info">
+                <div class="main_card_item" style="max-width: 400px;">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>⅓ cup fresh barberries</li>
+                        <li>1 bunch Swiss chard, stems removed</li>
+                        <li>1 bunch fresh parsley, tough stems trimmed</li>
+                        <li>1 bunch fresh cilantro, tough stems trimmed</li>
+                        <li>1 bunch fresh dill, tough stems trimmed</li>
+                        <li>1 bunch green onions, finely chopped</li>
+                        <li>½ cup walnuts, roughly chopped</li>
+                        <li>1 clove garlic, chopped</li>
+                        <li>1 ½ teaspoons kosher salt (such as Diamond Crystal®)</li>
+                        <li>1 teaspoon dried fenugreek leaves</li>
+                        <li>1 teaspoon dried tarragon</li>
+                        <li>½ teaspoon ground turmeric</li>
+                        <li>¼ teaspoon ground cinnamon</li>
+                        <li>¼ teaspoon ground saffron (Optional)</li>
+                        <li>¼ teaspoon ground Damask rose petals</li>
+                        <li>¼ teaspoon ground black pepper</li>
+                        <li>6 large eggs, or more as needed</li>
+                        <li>⅓ cup olive oil</li>
+                        <li>2 tablespoons olive oil</li>
+                    </ul>
+                </div>
+                <div class="direction">
+                    <h3>Step 1</h3>
+                    <p>
+                        Soak barberries in water to cover for 10 minutes. Drain.
+                    </p>
+                    <h3>Step 2</h3>
+                    <p>
+                        Pulse Swiss chard, parsley, cilantro, and dill together in a food processor, working in batches, until finely chopped but not mushy. Place into a large bowl with barberries, walnuts, garlic, salt, fenugreek, tarragon, turmeric, cinnamon, saffron, rose petals, and black pepper. Stir to combine. Add 6 eggs and mix well to combine; the batter should have the consistency of thick yogurt or soft serve ice cream. If it doesn't, add more eggs, 1 at a time, and mix to combine.
+                    </p>
+                    <p class="more_btn" onclick="open_more()">See All</p>
+
+                    <div class="more_">
+                        <span class="close_more" style="cursor: pointer;width: 40px;color: red;height: 40px;position: absolute; top: 0;right: 0;display: grid;place-items: center;font-size: 13pt;" onclick="close_more()">x</span>
+                        <h3>Step 3</h3>
+                        <p>
+                            Heat 1/3 cup olive oil in a large (10- or 12-inch) nonstick frying pan over medium heat. Add batter and spread evenly. Cover with a lid and cook kookoo until oil starts to bubble along the sides, about 3 minutes. Cover and cook until it starts to set and the bottom is browned, 12 to 15 minutes.
+                        </p>
+                        <h3>Step 4</h3>
+                        <p>
+                            Cut the kookoo evenly into 4 large pieces and use a wide spatula to flip each piece over, 1 at a time. Drizzle 2 tablespoons oil in between the cuts, reduce heat to medium-low, and cook, uncovered, until cooked through, about 10 minutes. Cut into desired pieces and serve warm or at room temperature.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="nutrition">
+                    <h2>Nutrition Facts</h2>
+                    <table>
+                        <tr>
+                            <td>Calories</td>
+                            <td>238</td>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>21g</td>
+                        </tr>
+                        <tr>
+                            <td>Carbs</td>
+                            <td>7g</td>
+                        </tr>
+                        <tr>
+                            <td>Protien</td>
+                            <td>8g</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function redirectToPage(url) {
+            window.location.href = url;
+        }
+
+        var more_ = document.querySelector('.more_');
+        function open_more() {
+            more_.style.transform = 'translateY(0%)';
+            more_.style.opacity = '1';
+            more_.style.pointerEvents = 'all';
+        }
+        function close_more() {
+            more_.style.transform = 'translateY(10%)';
+            more_.style.opacity = '0';
+            more_.style.pointerEvents = 'none';
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/black.css">
+    <title>Irish Bannock</title>
+</head>
+<body>
+    <div class="img_con" onclick="redirectToPage('../Images/Screen-Shot-2020-11-06-at-11.43.12-AM-5f8ac97577d54c9994e14334202b2d86.webp')">
+        <img src="../Images/Screen-Shot-2020-11-06-at-11.43.12-AM-5f8ac97577d54c9994e14334202b2d86.webp" alt="asd">
+    </div>
+    <div class="container">
+        <div class="container2">
+            <div class="heading">
+                <h2 class="name">Ireland: Irish Bannock</h2>
+                <p>
+                    A tasty loaf similar to a scone. Perfect for breakfast or as a snack with tea or coffee.
+                </p>
+            </div>
+
+            <div class="main_info">
+                <div class="main_card_item" style="max-width: 250px">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>2 cups all-purpose flour</li>
+                        <li>2 tablespoons white sugar</li>
+                        <li>½ teaspoon baking powder</li>
+                        <li>½ teaspoon baking soda</li>
+                        <li>½ teaspoon salt</li>
+                        <li>2 tablespoons butter</li>
+                        <li>1 cup buttermilk</li>
+                        <li>½ cup dried currants</li>
+                    </ul>
+                </div>
+                <div class="direction" style="max-width: 450px">
+                    <h3>Step 1</h3>
+                    <p>
+                        Combine flour, sugar, baking soda, baking powder, and salt. Cut butter into flour mixture with pastry cutter. Add buttermilk until dough is soft. Stir in currants.
+                    </p>
+                    <h3>Step 2</h3>
+                    <p>
+                        Turn dough out onto a lightly floured surface. Knead for 5 minutes, or until smooth. Form dough into a 7 inch round. Place on a lightly oiled cake pan or cookie sheet. Cut 1/2 inch deep cross side to side. Score with cross 1/2 inch deep on the top.
+                    </p>
+                    <h3>Step 3</h3>
+                    <p>
+                        Bake in a preheated 375 degrees F (190 degrees C) oven for 40 minutes.
+                    </p>
+                </div>
+                <div class="nutrition">
+                    <h2>Nutrition Facts</h2>
+                    <table>
+                        <tr>
+                            <td>Calories</td>
+                            <td>836</td>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>24g</td>
+                        </tr>
+                        <tr>
+                            <td>Carbs</td>
+                            <td>144g</td>
+                        </tr>
+                        <tr>
+                            <td>Protien</td>
+                            <td>28g</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function redirectToPage(url) {
+            window.location.href = url;
+        }
+
+        var more_ = document.querySelector('.more_');
+        function open_more() {
+            more_.style.transform = 'translateY(0%)';
+            more_.style.opacity = '1';
+            more_.style.pointerEvents = 'all';
+        }
+        function close_more() {
+            more_.style.transform = 'translateY(10%)';
+            more_.style.opacity = '0';
+            more_.style.pointerEvents = 'none';
+        }
+      </script>
+</body>
+</html>
